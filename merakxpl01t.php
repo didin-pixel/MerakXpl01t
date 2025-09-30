@@ -1184,7 +1184,7 @@ function shell()
                <div style="background-color:#000" class="jumbotron text-center" style="margin-bottom:0">
                   <p class="font-weight-bold text-success"><?= author ?> <span class="text-success">Copyright &copy; 2025</span></p>
                   <h3 class="mb-2">
-                     <a target="_blank" href="https://github.com/dmzhari/">
+                     <a target="_blank" href="https://github.com/didin-pixel/">
                         <i class="fab fa-github"></i>
                      </a>
                   </h3>
