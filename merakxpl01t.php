@@ -32,7 +32,7 @@ function login_shell() {
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>MerakXploit</title>
+<title>MerakXpl01t</title>
 <style type="text/css">
 html {
 	margin: 20px auto;
@@ -126,7 +126,7 @@ if(get_magic_quotes_gpc()) {
 ###############################################################################
 // Shell ini tidak sepenuhnya 100% Coding manual, ada beberapa function dan tools kita ambil dari shell yang sudah ada.
 // Thanks Untuk IndoXploit dan Ecchi shell sebagai referensi utama shell ini.
-// Greetz: All Member MerakXploit. & All My Friends.
+// Greetz: All Member MerakXpl01t. & All My Friends.
 ###############################################################################
 -->
 <head>
