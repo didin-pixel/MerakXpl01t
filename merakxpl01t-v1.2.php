@@ -52,7 +52,7 @@ input[type=password] {
  | root@merakxpl01t:~# wh0am1 |
  -----------------------------
 
- 															o
+ 						        o
                                                             o%
                                                            //
                                                       -="~\
