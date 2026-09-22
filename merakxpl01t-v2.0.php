@@ -105,7 +105,7 @@ if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
 <!--
 ###############################################################################
 // Shell ini tidak sepenuhnya 100% Coding manual, ada beberapa function dan tools kita ambil dari shell yang sudah ada.
-// Thanks Untuk IndoXploit dan Ecchi shell sebagai referensi utama shell ini.
+// Thanks Untuk IndoXploit dan Dragon shell sebagai referensi utama shell ini.
 // Greetz: All Member MerakXpl01t. & All My Friends.
 ###############################################################################
 -->
